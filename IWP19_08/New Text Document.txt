@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Objects</h2>
+
+<p id="length">Length of String</p>
+<p id="substring">Substring from position 7 till 13</p>
+<p id="slicer">Slice on position 7</p>
+<p id="searching">Search for Word3</p>
+<p id="position">Position of Word4</p>
+
+ <button onclick="stringMethods()">Execute String Methods</button> 
+
+<script>
+function stringMethods() {
+	var str = "Word1, Word2, Word3, Word4";
+	var substr = str.substring(7,13);
+	document.getElementById("length").innerHTML = str.length;
+	document.getElementById("substring").innerHTML = substr;
+
+	var slicer = str.slice(7);
+	document.getElementById("slicer").innerHTML = slicer;
+	
+	var searched = str.search("Word3");
+	document.getElementById("searching").innerHTML = searched;
+	
+	var position = str.indexOf("Word4");
+	document.getElementById("position").innerHTML = position;
+}
+</script>
+
+</body>
+</html>

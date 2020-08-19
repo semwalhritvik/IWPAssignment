@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="bool">declaring x boolean and y boolean object and checking x==y and x===y.</p>
+ <button onclick="booleanMethods()">Execute Boolean Methods</button> 
+
+<script>
+function booleanMethods() {
+	var x = false; 
+	var y = new Boolean(false);  
+	document.getElementById("bool").innerHTML = typeof x + "<br>" + typeof y + "<br>" + (x==y) + "<br>" + (x===y);
+}
+</script>
+
+</body>
+</html>

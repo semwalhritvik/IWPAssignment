@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+<p id="length">Length of Array</p>
+<p id="username">username of first user</p>
+<p id="before">Array before adding new element</p>
+<p id="after">Array after adding new element</p>
+
+ <button onclick="arrayMethods()">Execute Array Methods</button> 
+
+<script>
+function arrayMethods() {
+	var arr = ["user1", "user2", "user3"];
+	document.getElementById("length").innerHTML = arr.length;
+	
+	var uid = {username:"Johny", password:"Appleseed"};
+	document.getElementById("username").innerHTML = uid["username"];
+
+	document.getElementById("before").innerHTML = arr;
+	arr.push("user4");
+	document.getElementById("after").innerHTML = arr;
+}
+
+</script>
+
+</body>
+</html>
+
+

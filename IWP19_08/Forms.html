@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Events</title>
+    <style>
+        h2, button{
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript">
+
+        function validateForm() {
+
+            /Validate Name/
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+
+            /Validate Age/
+            var age = document.getElementById("age").value;
+
+            if (isNaN(x) || x < 18) {
+                text = "Input not valid age must be above 18";
+            }
+            document.getElementById("demo").innerHTML = text;
+
+            /Password validation/
+            var create_pass = document.getElementById("create_pass").value;
+            var retype_pass = document.getElementById("retype_pass").value;
+            if(create_pass!= retype_pass){
+                alert_msg= " Password dosen't match ";
+            }
+            document.getElementById("pass_vald").innerHTML = alert_msg;
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>HTML Forms with Js Validation</h2>
+
+    <form action="" name="myForm" onsubmit="alert('SignIn Sucessfully')">
+
+        <fieldset>
+            <legend>PERSONAL INFO</legend>
+            <label for="fname">First name :</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name :</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="age">Age :</label><br>
+            <input type="number" id="age" name="age">
+            <p id="demo" style="color:red;"></p>
+            <label for="">Gender :</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>SignIn info</legend>
+            <label for="gmail">Gmail :</label><br>
+            <input type="email" id="gmail" name="gmail" required><br>
+            <label for="create_pass">Create Password :</label><br>
+            <input type="password" id="create_pass" name="pass"><br>
+            <label for="retype_pass">Re-Type Password</label><br>
+            <input type="password" id="retype_pass" name="pass"><br>
+            <p id="pass_vald" style="color:red;"></p>
+        </fieldset>
+            
+            <br>
+            <button type="submit" value="submit" onclick="validateForm()">Sign-Up</button>
+            <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+
+</html>
