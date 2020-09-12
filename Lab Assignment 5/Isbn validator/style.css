@@ -1,0 +1,63 @@
+*{
+    font-family: sans-serif;
+}
+.form
+{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background :rgba(0,0,0,.8);
+    box-shadow: 0px 15px 25px rgba(0,0,0,.5);
+    border-radius: 20px;
+
+}
+.form h2
+{
+    margin: 0 0 30px;
+    color: #ffffff;
+    text-align: center;
+}
+.form .inputbox
+{
+    position: relative;
+}
+.form .inputbox input
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    background: transparent;
+
+}
+.form .inputbox label
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color:#ffffff;
+    pointer-events:none;
+    transition: .5s;
+}
+.form .inputbox input:focus ~label,
+.form .inputbox input:valid ~label
+{
+    top: -18px;
+    left: 0;
+    color:blueviolet;
+    font-size: 12px;
+}
+.val{
+    left: 0;
+    color:blueviolet;
+    font-size: 16px;
+}
