@@ -39,5 +39,27 @@ The implementation looks as follows:
 
 ![picture alt](Images/PeriodicTable.jpeg)
 
+# IWPAssignment II
+### JavaScript Objects and Methods ###
+
+### JavaScript String Object ###
+![picture alt](Images/StringBefore.png)
+![picture alt](Images/StringAfter.png)
+
+### JavaScript Array Object ###
+![picture alt](Images/ArrayBefore.png)
+![picture alt](Images/ArrayAfter.png)
+
+### JavaScript Boolean Object ###
+![picture alt](Images/BooleanBefore.png)
+![picture alt](Images/BooleanAfter.png)
+
+### JavaScript Date and Math Object ###
+![picture alt](Images/MathAndDate.png)
+
+### JavaScript Web Form Validation ###
+![picture alt](Images/FormBefore.png)
+![picture alt](Images/FormAfter.png)
+
 
 
